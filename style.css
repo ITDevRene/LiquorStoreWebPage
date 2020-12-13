@@ -19,17 +19,14 @@ body {
 }
 
 table {
-    margin-left: 10px;
-}
-/* Properties for the drink img tag that adds the drinks picss*/
-.drinks-img {
-   width: 400px;
-   height: 400px;
    margin-left: auto;
    margin-right: auto;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
+   border-left: 1px solid;
+   
+}
+
+table td {
+    padding-left: 20px;
 }
 
 .paragraph {
@@ -66,6 +63,26 @@ table {
     display: flex;
     justify-content: center;
 }
+
+/* Properties for the drink img tag that adds the drinks picss*/
+.drinks-img {
+   width: 400px;
+   height: 400px;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.drinks-presentations {
+     margin-top: auto;
+     margin-bottom: auto;
+     min-height: 700px;
+     display: flex;
+     flex-direction: column;
+}
+
 .img-dimen {
    width: 400px;
    height: 400px;
@@ -119,11 +136,12 @@ nav a:hover {
 }
 /* Properties for the footer tag*/
 footer {
+    background-image: image("o"); 
     background: rgba(255,99,71,.8);
     margin-top: 2em;
     min-height: 500px;
-    margin-left:-1vw;
-    width: 100.6vw;
+    margin-left:-0.4vw;
+    width: 99.1vw;
 }
 
 .footer-img {
@@ -140,12 +158,6 @@ footer {
 
 .copy-specs {
     margin-left: 50px; 
-}
-
-.drinks-presentations {
-     margin-top: auto;
-     margin-bottom: auto;
-     min-height: 700px;
 }
 
 .social {
