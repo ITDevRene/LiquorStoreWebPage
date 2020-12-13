@@ -1,0 +1,41 @@
+
+/* Style layout for the spirits_page */
+
+header {
+    
+}
+
+
+header {
+      background-image: url(/images/background.jpg);
+}
+
+
+li {
+    list-style: none;
+}
+
+div ul {
+   width: 100px;
+   margin-left: 150px;
+
+}
+
+div h1 {
+   width: 100px;
+   margin-left: 150px;
+}
+
+.galleria { 
+    width: 700px; 
+    height: 400px; 
+    background: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.listing {
+     width: 100px;
+   margin-left: 150px;
+}

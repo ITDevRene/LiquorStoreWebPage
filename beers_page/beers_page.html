@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+ <!-------------------------------------- HEAD tag ------------------------------ -->
+  <head>
+     <meta charset="utf-8">
+     <title>Our Wines</title>
+    
+     <link rel="stylesheet" href="beers_style.css">
+     <link rel="stylesheet" href="../style.css">
+     
+     <script type="text/javascript" src="main.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+     <script src="../galleria-1.6.1/dist/galleria.min.js"></script>
+      
+      <style>
+        .galleria{ width: 700px; height: 400px; background: #000 }
+     </style>
+      
+      <style>
+          .images { }
+      </style>
+  </head>  
+    
+  <!-------------------------------------- HEADER tag ------------------------------ -->
+    <header id="spirits_header">
+        <div class="store-logo">
+        <a href="../index.html"><img src="../images/liquor-store-logo.jpg" style="border-radius: 50%" alt="Susana's Liquors"></a>
+    </div>
+    
+    <!-- This layout the navigation components -->
+    <nav>
+       <div><a href="../index.html">Home</a></div>
+       <div><a href="/spirits_page/spirits.html">Spirits</a></div>
+       <div><a href="../wines_page/wines.html">Wine</a></div>
+       <div><a href="../beers_page/beers_page.html">Beers</a></div>
+       <div><a href="../about_us/about_us.html">About Us</a></div>
+       <div><a href="../contact_us/contact_us.html">Contact Us</a></div>
+    </nav>
+        
+    </header>
+    
+<!-------------------------------------- BODY tag   ------------------------------ --> 
+  <body style="justify-content: center">
+      
+       <!-- This div is for placing its contents in a row. -->
+      <div class="flex-row">
+               <div class="listing"> 
+ <!-- Header for the unordered list -->
+                     <h1 style="color: black" class="">Products</h1>
+
+                      <!-- Code for the list of products -->
+                      <ul>
+                         <li><a><img src="images/beer_icon.png" alt="|">Heineken</a></li>
+                          <hr>
+                          <li><a>Corolana Extra</a></li>
+                          <hr>
+                          <li><a>Modelo</a></li>
+                          <hr>
+                          <li><a>Bucanero</a></li>
+                          <hr>
+                          <li><a>Crystal</a></li>
+                          <hr>
+                          <li><a>Bavaria</a></li>
+                          <hr>
+                          <li><a>Blue Moon</a></li>
+                          <hr>
+                          <li><a>Becks</a></li>
+                          <hr>
+                          <li><a>Fireball</a></li>
+                          <hr>
+                      </ul>
+                 </div>
+          
+                 <div class="galleria">
+                    <img src="../images/beers/heineken.jpg">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                 </div>
+      </div>
+      
+        <script>
+            (function() {
+                Galleria.loadTheme('../galleria-1.6.1/dist/themes/classic/galleria.classic.min.js');
+                Galleria.run('.galleria');
+            }());
+        </script>
+        
+  </body>
+    
+    <!-------------------------------------- FOOTER tag   ----------------------------------> 
+    <!--  FOOTER components -->
+    <footer id="beer_footer" class="flex-column">
+     
+        
+        <div class="img-left">
+           <a href="https://www.facebook.com" target="media"><img src="../images/facebook.png" alt="Facebook" class="social"></a>
+           <a href="https://www.instagram.com/" target="media"><img src="../images/instagram.png" alt="Instagram" class="social"></a>
+           <a href="https://twitter.com/?lang=en" target="media"><img src="../images/twitter.png" alt="Twitter" class="social"></a>    
+        </div>
+        
+        <div class="flex-row">
+            
+         <!-- Table for business hours-->
+          <table>
+              <tr>
+                 <th colspan="2">Our Hours</th>
+              </tr>
+              
+              <tr>
+                  <td>Mon-Fri:</td>
+                  <td> 8:00 AM to 10:00 PM </td>
+              </tr>  
+              <tr>
+                  <td>Sat:</td>
+                  <td> 8:00 AM to 6:00 PM </td>
+              </tr>
+              
+              <tr>
+                  <td>Sun:</td>
+                  <td> Closed </td>
+              </tr>
+              
+          </table>
+           
+            
+            <!-- Table for products navigation -->
+            <table>
+              <tr>
+                 <th> Our Products</th>
+              </tr>
+              
+              <tr>
+                  <td> <a href="#" >Spirits</a></td>
+              </tr>  
+                
+              <tr>
+                  <td> <a href="#" >Wines</a></td>
+              </tr>
+              
+              <tr>
+                  <td> <a href="#" >Beers</a></td>
+              </tr>     
+          </table>
+            
+           <!-- Table for CONTACT US-->
+           <table>
+               
+               <!-- Row -->
+               <tr>
+                   <th colspan="2">Contact Us</th>
+               </tr>
+               
+               <!-- Row -->
+               <tr>
+                   <td><img src="../images/telephone.png" alt="Telephone" width="30px" height="30px"></td>
+                   <td>(786)111-0000</td>
+               </tr>
+               
+               <!-- Row -->
+               <tr>
+                   <td><img src="../images/email.png" alt="Email" width="35px" height="25px"></td>
+                   <td>susansliquor@gmail.com</td>
+               </tr>
+               
+           </table>
+            
+        </div>
+        
+          <p style="text-align: center" class="copy-specs"> &copy;Susan's Liquors </p>
+    </footer>
+    
+</html>

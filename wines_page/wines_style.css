@@ -1,0 +1,28 @@
+header {
+      background-image: url(images/columbia.png);
+}
+.galleria {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+div ul {
+   width: 100px;
+   margin-left: 150px;
+
+}
+
+div h1 {
+   width: 100px;
+   margin-left: 150px;
+}
+
+.listing {
+   width: 100px;
+   margin-left: 150px;
+}
