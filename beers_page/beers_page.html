@@ -9,6 +9,9 @@
      <link rel="stylesheet" href="beers_style.css">
      <link rel="stylesheet" href="../style.css">
      
+       <!-- Adding a favicon to the page -->
+      <link rel="icon" href="../images/favicon_io/favicon-32x32.png">
+      
      <script type="text/javascript" src="main.js"></script>
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
      <script src="../galleria-1.6.1/dist/galleria.min.js"></script>
@@ -51,23 +54,23 @@
 
                       <!-- Code for the list of products -->
                       <ul>
-                         <li><a><img src="images/beer_icon.png" alt="|">Heineken</a></li>
+                         <li><a id="heineken" onmouseover="markWithPic('heineken','img');">Heineken</a><img id="img"></li>
                           <hr>
-                          <li><a>Corolana Extra</a></li>
+                          <li><a id="corona" onmouseover="markWithPic('corona','img1');">Corona</a><img id="img1"></li>
                           <hr>
-                          <li><a>Modelo</a></li>
+                          <li><a id="modelo" onmouseover="markWithPic('modelo','img2');">Modelo</a><img id="img2"></li>
                           <hr>
-                          <li><a>Bucanero</a></li>
+                          <li><a id="bucanero" onmouseover="markWithPic('bucanero','img3');">Bucanero</a><img id="img3"></li>
                           <hr>
-                          <li><a>Crystal</a></li>
+                          <li><a id="beer1" onmouseover="markWithPic('beer1','img4');">Crystal</a><img id="img4"></li>
                           <hr>
-                          <li><a>Bavaria</a></li>
+                          <li><a id="beer2" onmouseover="markWithPic('beer2','img5');">Blue Moon</a><img id="img5"></li>
                           <hr>
-                          <li><a>Blue Moon</a></li>
+                          <li><a id="beer3" onmouseover="markWithPic('beer3','img6');">Guiness</a><img id="img6"></li>
                           <hr>
-                          <li><a>Becks</a></li>
+                          <li><a id="beer4" onmouseover="markWithPic('beer4','img7');">Bavaria</a><img id="img7"></li>
                           <hr>
-                          <li><a>Fireball</a></li>
+                          <li><a id="beer5" onmouseover="markWithPic('beer5','img8');">Miller Light</a><img id="img8"></li>
                           <hr>
                       </ul>
                  </div>
@@ -86,6 +89,21 @@
                 Galleria.run('.galleria');
             }());
         </script>
+      
+       <script>
+        function markWithPic(id,imgId) {
+              var element = document.getElementById(id);
+              var image = document.getElementById(imgId);
+                
+                element.addEventListener('mouseenter',function(event){
+                
+                image.setAttribute('src','../beers_page/images/beer_icon.png') ;},false);
+            
+               element.addEventListener('mouseout',function(event){
+                
+                image.setAttribute('src','') ;},false);
+        }
+      </script>
         
   </body>
     
